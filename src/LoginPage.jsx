@@ -37,7 +37,7 @@ export default function LoginPage({ onLogin }) {
           ? { name: nameInput ? nameInput.value : '', email, password } 
           : { email, password };
         
-        const res = await fetch(`http://localhost:5000${endpoint}`, {
+        const res = await fetch(`http://app-backend-production-f68e.up.railway.app${endpoint}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
