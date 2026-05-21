@@ -16,7 +16,7 @@ export default function App() {
     }
 
     // Verify the token with the backend
-    fetch('app-backend-production-f68e.up.railway.app/api/auth/me', {
+    fetch('http://app-backend-production-f68e.up.railway.app/api/auth/me', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => {
