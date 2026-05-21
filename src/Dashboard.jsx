@@ -117,7 +117,7 @@ export default function Dashboard({ onLogout }) {
       formData.append('className', selectedClass);
       formData.append('subjectName', selectedSubject);
 
-      const res = await fetch('http://localhost:5000/api/upload-lecture', {
+      const res = await fetch('app-backend-production-f68e.up.railway.app/api/upload-lecture', {
         method: 'POST',
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         body: formData
